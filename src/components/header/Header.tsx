@@ -25,7 +25,7 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-20 py-4 flex justify-between items-center">
         <div className="flex gap-20 items-center">
           {/* Logo */}
-          <a href="/" className="flex items-center">
+          <a href="/" className="flex items-center cursor-pointer">
             <img src="/Pluit_sakti.png" alt="Logo Header" className="w-32" />
           </a>
 
@@ -76,7 +76,7 @@ const Header = () => {
           <div className="flex gap-4 items-center">
             <button
               onClick={() => setShowMobileSearch(true)}
-              className="text-white text-2xl"
+              className="text-white text-2xl  cursor-pointer"
             >
               <CiSearch />
             </button>
@@ -157,7 +157,7 @@ const Header = () => {
             </form>
             <button
               onClick={() => setShowMobileSearch(false)}
-              className="mt-4 text-white text-2xl"
+              className="mt-4 text-white text-2xl cursor-pointer"
             >
               ✕
             </button>

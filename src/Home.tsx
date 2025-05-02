@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import { genreList } from "./utils/genreList";
 import SectionSlider from "./fragments/SectionSlider";
 import GenreSection from "./components/genreSection";
+import { IoEyeOutline } from "react-icons/io5";
 
 interface HomeProps {
   topRated: MovieTypes[];
@@ -34,7 +35,7 @@ const Home = ({ topRated, popular, nowPlaying, upcoming }: HomeProps) => {
                 to={`movie/${movie.id}`}
                 className="relative bg-slate-100 before:conten-[''] before:absolute before:top-0 before:-left-[100%] before:w-screen before:h-full before:bg-gradient-to-r before:from-[#090617] before:from-15% before:to-transparent before:z-10"
               >
-                <div className="w-full h-[35rem] md:h-[80vh] lg:h-[90vh]">
+                <div className="w-full h-dvh">
                   <img
                     src={`${baseImgUrl}original${movie.backdrop_path}`}
                     className="shadow-2xl w-full h-full object-cover object-top"
@@ -78,8 +79,15 @@ const Home = ({ topRated, popular, nowPlaying, upcoming }: HomeProps) => {
                       <span className="text-slate-300">Dibintangi:</span>{" "}
                       <i>Belum tersedia</i>
                     </p>
-
-                    <Link to={`movie/${movie.id}`}>Lihat Film</Link>
+                    <div className="w-full flex justify-start mt-10">
+                      <Link
+                        to={`movie/${movie.id}`}
+                        className="flex gap-1 items-center text-white w-auto py-3 px-5 bg-red-600 rounded-md"
+                      >
+                        <IoEyeOutline className="text-xl mt-0.5" />
+                        Lihat Film
+                      </Link>
+                    </div>
                   </div>
                 </article>
               </Link>

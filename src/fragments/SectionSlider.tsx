@@ -19,7 +19,7 @@ const SectionSlider = ({
 
   return (
     <section className="py-12">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-20">
+      <div className="container mx-auto px-4 md:px-20">
         {/* Header + Button */}
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl sm:text-2xl font-bold text-white">{title}</h2>
