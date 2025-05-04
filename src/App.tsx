@@ -97,6 +97,7 @@ function App() {
         <Route path="/sedang-tayang/movie/:id" element={<DetailMovie />} />
         <Route path="/popular/movie/:id" element={<DetailMovie />} />
         <Route path="/mendatang/movie/:id" element={<DetailMovie />} />
+        <Route path="/genre/movie/:id" element={<DetailMovie />} />
       </Routes>
       <Footer />
     </>
