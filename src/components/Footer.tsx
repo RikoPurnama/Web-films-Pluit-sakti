@@ -53,19 +53,19 @@ const Footer = () => {
             <div className="mt-6">
               <h3 className="mb-2">Ikuti Kami</h3>
               <div className="flex gap-4 text-lg">
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+                <a href="https://instagram.com/e.rickoooo" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
                   <FaYoutube />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+                <a href="https://instagram.com/e.rickoooo" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
                   <FaFacebookF />
                 </a>
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
+                <a href="https://instagram.com/e.rickoooo" target="_blank" rel="noopener noreferrer" className="hover:text-sky-400">
                   <FaTwitter />
                 </a>
-                <a href="https://instagram.com/erickoooo" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
+                <a href="https://instagram.com/e.rickoooo" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
                   <FaInstagram />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+                <a href="https://instagram.com/e.rickoooo" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
                   <FaLinkedin />
                 </a>
               </div>
