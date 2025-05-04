@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="w-full fixed bg-[#090617] z-40 shadow-sm">
       <div className="mx-auto px-4 md:px-20 py-3 flex justify-between items-center">
-        <div className="flex gap-16">
+        <div className="flex gap-16 items-center">
           <a href="/" className="flex items-center cursor-pointer">
             <img src="/Pluit_sakti.png" alt="Logo Header" className="w-32" />
           </a>
