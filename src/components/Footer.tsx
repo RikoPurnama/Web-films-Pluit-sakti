@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#0F172A] py-10 text-white">
       <div className="container mx-auto px-4 md:px-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 border-b border-gray-600 pb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 border-b border-slate-600 pb-10">
           <div>
             <ul className="space-y-3">
               <li><Link to="" className="hover:underline">FAQ</Link></li>

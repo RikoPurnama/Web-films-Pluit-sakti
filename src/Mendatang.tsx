@@ -17,7 +17,7 @@ const Mendatang = ({ upcoming }: PopularProps) => {
 
   return (
     <section className="py-20 px-4 md:px-20">
-      <h1 className="text-3xl font-bold text-white mb-8">Populer</h1>
+      <h1 className="text-3xl font-bold text-white mb-8">Mendatang</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {visibleMovies.map((movie) => (
           <Card key={movie.id} movie={movie} />

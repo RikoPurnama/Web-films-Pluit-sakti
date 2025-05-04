@@ -1,6 +1,6 @@
 # 🎬 Movie App (TMDB API) — React + TypeScript
 
-Proyek ini adalah website katalog film yang menampilkan data dari [TMDB (The Movie Database)](https://www.themoviedb.org/). Dibangun menggunakan React + TypeScript, TailwindCSS, dan API TMDB.
+Proyek ini adalah website katalog film yang menampilkan data dari [TMDB (The Movie Database)](https://www.themoviedb.org/). Dikarenakan dibatasi wakti jadi website ini dibangun menggunakan React + TypeScript, TailwindCSS, dan API TMDB.
 
 ---
 
@@ -46,11 +46,22 @@ Buat file .env:
 🧱 Struktur Proyek
 src/
 ├── components/
-├── pages/
-│   ├── Home.tsx
-│   └── DetailMovie.tsx
+├── ├── Home.tsx
+│   ├── Sedang-Tayang.tsx
+│   ├── Popular.tsx
+│   ├── Mendatang.tsx
+│   ├── SearchPages.tsx
+│   ├── Detail_Movie.tsx
+│   ├── GenrePage.tsx
+│   └── Skeletons/
+│       └── CardSkeleton.tsx
 ├── utils/
-│   └── genreList.ts
+│   ├── genreList.ts
+│   └── useMediaQuery.tsx
+├── fragments/
+│   └── SectionSlider.tsx
+├── types/
+│   └── MovieTypes.ts
 ├── App.tsx
 ├── main.tsx
 🚀 Fitur yang Dibuat
@@ -89,9 +100,6 @@ Tambahkan handling error untuk data yang belum tersedia.
 
 Gunakan fallback pada gambar/poster jika poster_path kosong.
 
-📸 Preview (Opsional)
-Tambahkan screenshot UI proyek kamu di sini.
-
 📌 TODO
  - Tambah fitur trailer
 
@@ -101,11 +109,7 @@ Tambahkan screenshot UI proyek kamu di sini.
 
  - Responsif untuk mobile
 
- - Dark mode (opsional)
-
 🧑‍💻 Author
 Riko Purnama
-LinkedIn • GitHub
+LinkedIn • https://www.linkedin/in/RikoPurnama
 ---
-
-Jika kamu ingin aku bantu tulis README ini langsung dalam file `.md`, atau perlu ditambahkan badge GitHub, cara de

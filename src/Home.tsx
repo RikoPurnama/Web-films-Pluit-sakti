@@ -76,7 +76,7 @@ const Home = ({ topRated, popular, nowPlaying, upcoming }: HomeProps) => {
                 to={`/movie/${movie.id}`}
                 className="relative bg-slate-100 before:content-[''] before:absolute before:top-0 before:-left-[100%] before:w-screen before:h-full before:bg-gradient-to-r before:from-[#090617] before:from-15% before:to-transparent before:z-10"
               >
-                <div className="w-full h-dvh">
+                <div className="w-full h-lvh">
                   <img
                     src={`${baseImgUrl}original${movie.backdrop_path}`}
                     className="shadow-2xl w-full h-full object-cover object-top"
