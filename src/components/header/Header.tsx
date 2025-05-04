@@ -105,11 +105,11 @@ const Header = () => {
             >
               <motion.span
                 animate={{ rotateZ: toggle ? 45 : 0, y: toggle ? 8 : 0 }}
-                className="block w-8 h-0.5 bg-white rounded"
+                className="block w-8 h-[1px] bg-white rounded"
               />
               <motion.span
                 animate={{ width: toggle ? 0 : 24 }}
-                className="block w-6 h-0.5 bg-white rounded"
+                className="block w-6 h-[1px] bg-white rounded"
               />
               <motion.span
                 animate={{
@@ -117,7 +117,7 @@ const Header = () => {
                   y: toggle ? -8 : 0,
                   width: toggle ? 32 : 16,
                 }}
-                className="block w-4 h-0.5 bg-white rounded"
+                className="block w-4 h-[1px] bg-white rounded"
               />
             </button>
           </div>

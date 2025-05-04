@@ -41,7 +41,10 @@ const Home = ({ topRated, popular, nowPlaying, upcoming }: HomeProps) => {
             const data = await res.json();
             newActorsMap[movie.id] = data.cast || [];
           } catch (error) {
-            console.error(`Gagal mengambil aktor untuk movie ${movie.id}`, error);
+            console.error(
+              `Gagal mengambil aktor untuk movie ${movie.id}`,
+              error
+            );
             newActorsMap[movie.id] = [];
           }
         })
@@ -66,6 +69,8 @@ const Home = ({ topRated, popular, nowPlaying, upcoming }: HomeProps) => {
           transitionTime={3}
           showStatus={false}
           showIndicators={false}
+          swipeable={false}
+          emulateTouch={false}
         >
           {topRated.map((movie) => {
             const actors = actorsMap[movie.id] || [];
@@ -149,7 +154,11 @@ const Home = ({ topRated, popular, nowPlaying, upcoming }: HomeProps) => {
         </Carousel>
       </section>
 
-      <SectionSlider title="Sedang Tayang" movies={nowPlaying} linkTo="/sedang-tayang" />
+      <SectionSlider
+        title="Sedang Tayang"
+        movies={nowPlaying}
+        linkTo="/sedang-tayang"
+      />
       <SectionSlider title="Terpopuler" movies={popular} linkTo="/popular" />
       <SectionSlider title="Mendatang" movies={upcoming} linkTo="/mendatang" />
       <GenreSection />
