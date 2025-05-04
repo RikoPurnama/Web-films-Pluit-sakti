@@ -91,7 +91,7 @@ const DetailMovie = () => {
         />
 
         <div className="relative top-1/5 md:top-1/3 flex items-center z-50">
-          <div className="relative top-1/4 z-10 mx-auto px-4 md:px-20 flex flex-col md:flex-row items-start gap-10">
+          <div className="relative top-1/4 z-10 px-4 md:px-20 flex flex-col md:flex-row items-start gap-10">
             <div className="w-40 md:w-60 flex-shrink-0">
               <img
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -114,7 +114,7 @@ const DetailMovie = () => {
                 ))}
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-4">{movie.title}</h1>
+              <h1 className="text-5xl md:text-7xl font-bold mb-4">{movie.title}</h1>
 
               <span className="border px-2 py-1.5 rounded-full text-xs">
                 {movie.adult ? "18+" : "13+"}
